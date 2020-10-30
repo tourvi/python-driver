@@ -22,7 +22,7 @@ class NullHandler(logging.Handler):
 
 logging.getLogger('cassandra').addHandler(NullHandler())
 
-__version_info__ = (3, 22, 3)
+__version_info__ = (3, 24, 0)
 __version__ = '.'.join(map(str, __version_info__))
 
 
@@ -234,6 +234,10 @@ class ProtocolVersion(object):
     @classmethod
     def has_continuous_paging_next_pages(cls, version):
         return version >= cls.DSE_V2
+
+    @classmethod
+    def has_checksumming_support(cls, version):
+        return cls.V5 <= version < cls.DSE_V1
 
 
 class WriteType(object):

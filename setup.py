@@ -404,13 +404,13 @@ def run_setup(extensions):
             sys.stderr.write("Bypassing Cython setup requirement\n")
 
     dependencies = ['six >=1.9',
-                    'geomet>=0.1,<0.2']
+                    'geomet>=0.1,<0.3']
 
     if not PY3:
         dependencies.append('futures')
 
     _EXTRAS_REQUIRE = {
-        'graph': ['gremlinpython==3.3.4']
+        'graph': ['gremlinpython==3.4.6']
     }
 
     setup(
@@ -443,7 +443,6 @@ def run_setup(extensions):
             'Operating System :: OS Independent',
             'Programming Language :: Python',
             'Programming Language :: Python :: 2.7',
-            'Programming Language :: Python :: 3.4',
             'Programming Language :: Python :: 3.5',
             'Programming Language :: Python :: 3.6',
             'Programming Language :: Python :: 3.7',

@@ -4,7 +4,7 @@ A Python client driver for `Scylla <https://docs.scylladb.com>`_.
 This driver works exclusively with the Cassandra Query Language v3 (CQL3)
 and Cassandra's native protocol.
 
-The driver supports Python 2.7, 3.4, 3.5, 3.6, 3.7 and 3.8.
+The driver supports Python 2.7, 3.5, 3.6, 3.7 and 3.8.
 
 This driver is open source under the
 `Apache v2 License <http://www.apache.org/licenses/LICENSE-2.0.html>`_.
@@ -50,7 +50,7 @@ Contents
 :doc:`dates_and_times`
     Some discussion on the driver's approach to working with timestamp, date, time types
 
-:doc:`scylla_cloud`	
+:doc:`scylla_cloud`
     Connect to Scylla Cloud
 
 :doc:`CHANGELOG`

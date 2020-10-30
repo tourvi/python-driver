@@ -1,3 +1,59 @@
+3.25.0
+======
+Not released
+
+Features
+--------
+* Ensure the driver can connect when invalid peer hosts are in system.peers (PYTHON-1260)
+* Implement protocol v5 checksumming (PYTHON-1258)
+* Fix the default cqlengine connection mechanism to work with Astra (PYTHON-1265)
+
+Bug Fixes
+---------
+* Asyncore race condition cause logging exception on shutdown (PYTHON-1266)
+
+Others
+------
+* Drop Python 3.4 support (PYTHON-1220)
+* Update security documentation and examples to use PROTOCOL_TLS (PYTHON-1264)
+
+3.24.0
+======
+June 18, 2020
+
+Features
+--------
+* Make geomet an optional dependency at runtime (PYTHON-1237)
+* Add use_default_tempdir cloud config options (PYTHON-1245)
+* Tcp flow control for libevreactor (PYTHON-1248)
+
+Bug Fixes
+---------
+* Unable to connect to a cloud cluster using Ubuntu 20.04 (PYTHON-1238)
+* PlainTextAuthProvider fails with unicode chars and Python3 (PYTHON-1241)
+* [GRAPH] Graph execution profiles consistency level are not set to LOCAL_QUORUM with a cloud cluster (PYTHON-1240)
+* [GRAPH] Can't write data in a Boolean field using the Fluent API (PYTHON-1239)
+* [GRAPH] Fix elementMap() result deserialization (PYTHON-1233)
+
+Others
+------
+* Bump geomet dependency version to 0.2 (PYTHON-1243)
+* Bump gremlinpython dependency version to 3.4.6 (PYTHON-1212)
+* Improve fluent graph documentation for core graphs (PYTHON-1244)
+
+3.23.0
+======
+April 6, 2020
+
+Features
+--------
+* Transient Replication Support (PYTHON-1207)
+* Support system.peers_v2 and port discovery for C* 4.0 (PYTHON-700)
+
+Bug Fixes
+---------
+* Asyncore logging exception on shutdown (PYTHON-1228)
+
 3.22.0
 ======
 February 26, 2020
@@ -146,7 +202,7 @@ October 28, 2019
 
 Features
 --------
-* DataStax Apollo Support (PYTHON-1074)
+* DataStax Astra Support (PYTHON-1074)
 * Use 4.0 schema parser in 4 alpha and snapshot builds (PYTHON-1158)
 
 Bug Fixes

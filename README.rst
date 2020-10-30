@@ -3,10 +3,11 @@ Scylla Python Driver
 
 A modern, feature-rich and highly-tunable Python client library for Scylla Open Source (2.1+) and Apache Cassandra (2.1+) and
 Scylla Enterprise (2018.1.x+) using exclusively Cassandra's binary protocol and Cassandra Query Language v3.
+=======
+.. image:: https://travis-ci.com/datastax/python-driver.png?branch=master
+   :target: https://travis-ci.com/github/datastax/python-driver
 
-The driver supports Python versions 2.7, 3.4, 3.5, 3.6, 3.7 and 3.8.
-
-.. **Note:** This driver does not support big-endian systems.
+The driver supports Python versions 2.7, 3.5, 3.6, 3.7 and 3.8.
 
 Features
 --------
@@ -20,6 +21,10 @@ Features
 * `Concurrent execution utilities <http://scylladb.github.io/python-driver/master/api/cassandra/concurrent.html>`_
 * `Object mapper <http://scylladb.github.io/python-driver/master/object_mapper.html>`_
 * `Shard awareness <http://scylladb.github.io/python-driver/master/scylla_specific.html#shard-awareness>`_
+* `Connecting to DataStax Astra database (cloud) <https://docs.datastax.com/en/developer/python-driver/latest/cloud/>`_
+* DSE Graph execution API
+* DSE Geometric type serialization
+* DSE PlainText and GSSAPI authentication
 
 Installation
 ------------
